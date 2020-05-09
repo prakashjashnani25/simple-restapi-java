@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.prakash.java</groupId>
+  <artifactId>simple-restapi-java</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>simple-restapi-java</name>
+  <description>Java Rest API without using Any Framework</description>
+  <properties>
+  		<java.version>1.8</java.version>
+  		<maven.compiler.source>${java.version}</maven.compiler.source>
+  		<maven.compiler.target>${java.version}</maven.compiler.target>
+  		<jason.parser.version>2.9.7</jason.parser.version>
+  </properties>
+  <dependencies>
+  	<!-- Module For JSON Serialization -->
+  	<dependency>
+  		<groupId>com.fasterxml.jackson.core</groupId>
+  		<artifactId>jackson-databind</artifactId>
+  		<version>${jason.parser.version}</version>
+  	</dependency>
+  	<!-- 	Lombok  TO Simplify POJO classes -->
+  	<dependency>
+  		<groupId>org.projectlombok</groupId>
+  		<artifactId>lombok</artifactId>
+  		<version>1.18.0</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	
+  </dependencies>
+  <build>
+  <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
