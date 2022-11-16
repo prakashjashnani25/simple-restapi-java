@@ -9,7 +9,7 @@
   		<java.version>1.8</java.version>
   		<maven.compiler.source>${java.version}</maven.compiler.source>
   		<maven.compiler.target>${java.version}</maven.compiler.target>
-  		<jason.parser.version>2.9.7</jason.parser.version>
+  		<jason.parser.version>2.12.7.1</jason.parser.version>
   </properties>
   <dependencies>
   	<!-- Module For JSON Serialization -->
